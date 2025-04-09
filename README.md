@@ -11,6 +11,7 @@ Detalhamento de pedidos com itens incluídos
 Interface amigável e com design fofo usando a fonte Fredoka
 
 📁 Estrutura de Pastas
+
 pgsql
 
 Copiar
@@ -70,6 +71,7 @@ CSS3 com tema fofo (Fredoka)
 HTML5
 
 🎨 Estilo Visual
+
 Paleta de cores em tons pastel (rosa claro, lilás, branco)
 
 Ícones e emojis para tornar a interface mais amigável
@@ -77,18 +79,27 @@ Paleta de cores em tons pastel (rosa claro, lilás, branco)
 Design responsivo com cantos arredondados e sombras suaves
 
 🚀 Como Rodar o Projeto
+
 Clone o repositório:
 
 bash
+
 Copiar
+
 Editar
+
 git clone https://github.com/FranciellyPereira/SistemaLoja.git
+
 Acesse a pasta do projeto:
 
 bash
+
 Copiar
+
 Editar
+
 cd SistemaLoja
+
 Instale as dependências:
 
 bash
@@ -107,7 +118,11 @@ arduino
 Copiar
 Editar
 http://localhost:3000
+
 💖 Créditos
+
 Desenvolvido por Francielly Pereira
+
 Curso: Desenvolvimento Web com Node.js + Express
+
 Ano: 2025
