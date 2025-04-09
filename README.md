@@ -2,6 +2,7 @@
 Bem-vindo ao Fofux, um sistema web desenvolvido para gerenciar clientes, produtos e pedidos de uma loja especializada em pelúcias encantadoras. O sistema foi criado com tecnologias modernas e foco em uma experiência visual mágica e acolhedora.
 
 ✨ Funcionalidades
+
 Cadastro e listagem de clientes
 
 Visualização dos produtos com imagens
@@ -103,20 +104,31 @@ cd SistemaLoja
 Instale as dependências:
 
 bash
+
 Copiar
+
 Editar
+
 npm install
+
 Inicie o servidor:
 
 bash
+
 Copiar
+
 Editar
+
 node app.js
+
 Acesse no navegador:
 
 arduino
+
 Copiar
+
 Editar
+
 http://localhost:3000
 
 💖 Créditos
