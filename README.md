@@ -12,29 +12,53 @@ Interface amigável e com design fofo usando a fonte Fredoka
 
 📁 Estrutura de Pastas
 pgsql
+
 Copiar
+
 Editar
+
 fofux-loja/
+
 ├── public/
+
 │   ├── css/
+
 │   │   └── style.css
+
 │   └── images/
+
 │       └── (imagens dos produtos)
+
 ├── routes/
+
 │   ├── clientes.js
+
 │   ├── produtos.js
+
 │   └── pedidos.js
+
 ├── views/
+
 │   ├── partials/
+
 │   │   ├── header.ejs
+
 │   │   └── footer.ejs
+
 │   ├── clientes.ejs
+
 │   ├── produtos.ejs
+
 │   ├── pedidos.ejs
+
 │   └── index.ejs
+
 ├── app.js
+
 └── package.json
+
 🛠 Tecnologias Utilizadas
+
 Node.js
 
 Express
