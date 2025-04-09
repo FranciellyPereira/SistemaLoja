@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Pedido</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <main>
+        <div class="detalhes-container">
+            <h2>Detalhes do Pedido Nº <%= pedido.numero %></h2>
+            
+            <div class="info-pedido">
+                <p><strong>Cliente:</strong> <%= pedido.cliente %></p>
+                <p><strong>Data:</strong> <%= pedido.data %></p>
+                <p><strong>Valor Total:</strong> R$ <%= pedido.valor.toFixed(2).replace('.', ',') %></p>
+            </div>
+
+            <h3 style="margin-top: 25px;">Produtos Comprados:</h3>
+            <ul class="produtos-lista">
+                <% pedido.produtos.forEach(produto => { %>
+                    <li><%= produto %></li>
+                <% }) %>
+            </ul>
+
+            <a href="/pedidos" class="voltar-btn">← Voltar à Lista de Pedidos</a>
+        </div>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
