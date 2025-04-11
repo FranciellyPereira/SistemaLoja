@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Produtos - Sistema de Loja</title>  
+    <link rel="stylesheet" href="/css/style.css"> 
+</head>  
+<body>  
+    <!-- Incluindo o header -->
+    <%- include('partials/header') %>  
+
+    <main>  
+        <h2>Lista de Produtos</h2>  
+        <table>  
+            <thead>  
+                <tr> 
+                    <th></th> 
+                    <th>Nome do Produto</th>  
+                    <th>Categoria</th>  
+                    <th>Preço</th>  
+                    <th>Ações</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <% produtos.forEach(produto => { %>  
+                    <tr>  
+                        <td>
+                            <img src="/images/<%= produto.imagem %>" alt="<%= produto.nome %>" width="80">
+                        </td>  
+                        <td><%= produto.nome %></td>  
+                        <td><%= produto.categoria %></td>  
+                        <td>R$ <%= produto.preco.toFixed(2).replace('.', ',') %></td>  
+                        <td>  
+                            <a href="#" class="button">🛒 Comprar</a> 
+                        </td>  
+                    </tr>  
+                <% }); %>  
+            </tbody>  
+        </table>  
+    </main>
+    <%- include('partials/footer') %>  
+</body>  
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Pedidos - Sistema de Loja</title>  
+    <link rel="stylesheet" href="/css/style.css"> 
+</head>  
+<body>   
+    <%- include('partials/header') %>  
+
+    <main>  
+        <h2>Lista de Pedidos</h2>  
+        <table>  
+            <thead>  
+                <tr>  
+                <th> N°</th> 
+                    <th>Cliente</th>  
+                    <th>Valor</th>  
+                    <th>Data</th>  
+                    <th>Ações</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <% if (pedidos.length > 0) { %>  
+                    <% pedidos.forEach(pedido => { %>  
+                        <tr>  
+                            <td><%= pedido.numero %></td>  
+                            <td><%= pedido.cliente %></td>  
+                            <td>R$ <%= pedido.valor.toFixed(2).replace('.', ',') %></td>
+                            <td><%= pedido.data %></td>  
+                            <td>  
+                                <a href="/pedidos/<%= pedido.numero %>" class="button">Detalhes</a>  
+                            </td>  
+                        </tr>  
+                    <% }); %>  
+                <% } else { %>  
+                    <tr>  
+                        <td colspan="5" style="text-align: center;">Nenhum pedido encontrado.</td>  
+                    </tr>  
+                <% } %>  
+            </tbody>  
+        </table>  
+    </main>
+    <%- include('partials/footer') %>  
+</body>  
+</html>
