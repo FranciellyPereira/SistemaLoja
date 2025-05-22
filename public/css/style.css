@@ -1,79 +1,86 @@
+/* Reset básico para remover margens e espaçamentos padrões */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  /* Estilo geral do corpo da página */
+  body {
     font-family: "Fredoka", sans-serif;
-    background-color: #FEEFF2;
-    color: #333;
-}
-
-header {
-    background: #EEE6FA;
+    background-color: #FEEFF2; /* Fundo rosado claro */
+    color: #333; /* Cor padrão do texto */
+  }
+  
+  /* Cabeçalho (topo) */
+  header {
+    background: #EEE6FA; /* Roxo claro */
     padding: 20px;
     text-align: center;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     margin-bottom: 15px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
+  }
+  
+  /* Menu de navegação */
+  nav ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+  }
+  
+  nav ul li {
+    display: inline; /* Itens em linha */
+    margin: 0 15px; /* Espaçamento entre os links */
+  }
+  
+  nav ul li a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
-}
-
-main {
+  }
+  
+  /* Área principal da página */
+  main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-main h2 {
+  }
+  
+  main h2 {
     margin-bottom: 20px;
-}
-
-table {
+  }
+  
+  /* Tabela */
+  table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-}
-
-th, td {
+  }
+  
+  th, td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-}
-
-th {
-    background-color: #FADAE0;
+  }
+  
+  th {
+    background-color: #FADAE0; /* Rosa claro */
     color: #333;
-}
-
-table tbody tr {
+  }
+  
+  table tbody tr {
     line-height: 1.6;
-}
-
-tr:hover {
-    background-color: #FFF5F7;
-}
-
-footer {
+  }
+  
+  tr:hover {
+    background-color: #FFF5F7; /* Leve destaque na linha */
+  }
+  
+  /* Rodapé fixo */
+  footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -85,68 +92,93 @@ footer {
     box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
     font-family: "Fredoka", sans-serif;
     z-index: 1000;
-}
-
-.button {
+  }
+  
+  /* Botões padrão */
+  .button,
+  .button-danger {
     display: inline-block;
+    width: 120px; 
+    text-align: center;
     padding: 10px 20px;
-    background-color: #FADAE0; 
-    color: #7D4B94; 
+    background-color: #FADAE0;
+    color: #7D4B94;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
     transition: background-color 0.3s ease-in-out, transform 0.2s;
     border: 2px solid #eeb7d4;
-}
-
-.button:hover {
-    background-color: #E3ECFA; 
-    color: #5c2c78; 
-    transform: scale(1.05);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-}
-
-.button-danger {
+  }
+  
+  
+  /* Botão vermelho para excluir */
+  .button-danger {
     background-color: #F6A1B0;
     color: #7D4B94;
-}
-
-.button-danger:hover {
+  }
+  .button-danger:hover {
     background-color: #e78a9d;
     color: #5c2c78;
-}
-
-.detalhes-container {
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  }
+  /* Botões de ação de formulário */
+  .button-form {
+    display: block;
+    width: 200px;
+    margin: 20px auto 0 auto;
+    padding: 12px;
+    background-color: #FADAE0;
+    color: #5c2c78;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Fredoka', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+    border: 2px solid #eeb7d4;
+  }
+  
+  .button-form:hover {
+    background-color: #4a2171;
+    transform: scale(1.05);
+  }
+  
+  /* Área de detalhes de pedido */
+  .detalhes-container {
     max-width: 600px;
     margin: 30px auto;
     background-color: #fff;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
-}
-
-.detalhes-container h2 {
+  }
+  
+  .detalhes-container h2 {
     color: #DCAFCB;
     margin-bottom: 20px;
     text-align: center;
-}
-
-.info-pedido p {
+  }
+  
+  .info-pedido p {
     margin-bottom: 10px;
     font-size: 16px;
-}
-
-.info-pedido strong {
+  }
+  
+  .info-pedido strong {
     color: #555;
-}
-
-.produtos-lista {
+  }
+  
+  /* Lista de produtos em detalhes */
+  .produtos-lista {
     list-style: none;
     padding-left: 0;
     margin-top: 20px;
-}
-
-.produtos-lista li {
+  }
+  
+  .produtos-lista li {
     background-color: #FEEFF2;
     padding: 10px 15px;
     margin-bottom: 10px;
@@ -155,14 +187,16 @@ footer {
     color: #444;
     display: flex;
     align-items: center;
-}
-
-.produtos-lista li::before {
+  }
+  
+  /* Ícone de urso nos produtos */
+  .produtos-lista li::before {
     content: "🧸";
     margin-right: 10px;
-}
-
-.voltar-btn {
+  }
+  
+  /* Botão de voltar nos detalhes */
+  .voltar-btn {
     display: block;
     width: fit-content;
     margin: 25px auto 0;
@@ -173,35 +207,36 @@ footer {
     border-radius: 8px;
     font-weight: bold;
     transition: background-color 0.3s;
-}
-
-.voltar-btn:hover {
+  }
+  
+  .voltar-btn:hover {
     background-color: #E3ECFA;
     color: #5c2c78;
-}
-
-.welcome-container {
+  }
+  
+  /* Boas-vindas na home */
+  .welcome-container {
     text-align: center;
     background: #fff0f5;
     padding: 40px 30px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-top: 30px;
-}
-
-.welcome-container h2 {
+  }
+  
+  .welcome-container h2 {
     font-size: 28px;
     color: #d77fa1;
     margin-bottom: 15px;
-}
-
-.welcome-container p {
+  }
+  
+  .welcome-container p {
     font-size: 18px;
     color: #555;
     margin-bottom: 10px;
-}
-
-.welcome-container .button {
+  }
+  
+  .welcome-container .button {
     font-size: 16px;
     padding: 12px 24px;
     background-color: #f6cde3;
@@ -212,21 +247,53 @@ footer {
     text-decoration: none;
     display: inline-block;
     margin-top: 15px;
-}
-
-.welcome-container .button:hover {
+  }
+  
+  .welcome-container .button:hover {
     background-color: #eeb7d4;
     color: #5c2c78;
     transform: scale(1.05);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-footer {
+  }
+  
+  /* Campos de formulário (cadastro/edição de clientes) */
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 15px;
+    font-size: 16px;
     font-family: "Fredoka", sans-serif;
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background: #EEE6FA;
     color: #333;
-}
-
+    border: 2px solid #eeb7d4;
+    border-radius: 8px;
+    background-color: #fff9fb;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Efeito quando o campo recebe foco */
+  input:focus {
+    outline: none;
+    border-color: #d77fa1;
+    box-shadow: 0 0 6px rgba(215, 127, 161, 0.25);
+  }
+  
+  /* Coloca campos lado a lado no formulário */
+  form input {
+    display: inline-block;
+    width: calc(33% - 10px); /* 3 por linha com espaço entre eles */
+    margin-right: 15px;
+  }
+  
+  /* Remove margem do último campo */
+  form input:last-child {
+    margin-right: 0;
+  }
+  
+  /* Espaçamento abaixo do formulário */
+  form {
+    margin-bottom: 30px;
+  }
+  

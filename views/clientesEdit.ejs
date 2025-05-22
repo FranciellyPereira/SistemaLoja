@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Cliente</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <main>
+    <h2>Editar Cliente</h2>
+    <form method="POST" action="/clientes/update/<%= cliente.id %>">
+      <input type="hidden" name="id" value="<%= cliente.id %>">
+      
+      <div>
+        <input name="nome" type="text" value="<%= cliente.nome %>" placeholder="Nome completo" required>
+      </div>
+      <div>
+        <input name="cpf" type="text" value="<%= cliente.cpf %>" placeholder="CPF" required>
+      </div>
+      <div>
+        <input name="endereco" type="text" value="<%= cliente.endereco %>" placeholder="Endereço" required>
+      </div>
+      
+      <button type="submit" class="button-form">Salvar Alterações</button>
+
+    </form>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

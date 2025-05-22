@@ -7,12 +7,21 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "keywords": ["nodejs", "express", "ejs", "sistema", "loja", "mvc"],
+  "keywords": [
+    "nodejs",
+    "express",
+    "ejs",
+    "sistema",
+    "loja",
+    "mvc"
+  ],
   "author": "Francielly Pereira",
   "license": "MIT",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mysql2": "^3.14.1",
+    "sequelize": "^6.37.7"
   },
   "devDependencies": {
     "nodemon": "^3.0.0"
